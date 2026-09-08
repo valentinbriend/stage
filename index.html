@@ -32,7 +32,7 @@
             border: 1px solid #e0e0e0;
         }
 
-        /* ---- En-tête avec logo ---- */
+        /* ---- En-tête avec logo (agrandi) ---- */
         .entete {
             display: flex;
             justify-content: space-between;
@@ -44,7 +44,7 @@
         }
 
         .entete-logo {
-            width: 80px;
+            width: 120px;   /* Augmenté de 80px à 120px */
             height: auto;
             margin-left: 15px;
         }
@@ -228,11 +228,13 @@
             .entete {
                 flex-direction: column;
                 align-items: center;
+                text-align: center;
             }
 
             .entete-logo {
                 margin-top: 10px;
                 margin-left: 0;
+                width: 100px;  /* Un peu plus petit sur mobile */
             }
 
             .identite {
@@ -303,7 +305,7 @@
                 <a class="lien-doc" href="CV.pdf">📄 Mon CV</a>
                 <a class="lien-doc" href="Lettre_motivation.pdf">✉️ Ma lettre de motivation</a>
                 <a class="lien-doc" href="fiche_accord_pfmp-cap-bac_pro_26-27-2.pdf">📋 Fiche d'accord PFMP</a>
-                <a class="lien-doc lien-lycee" href="https://www.lycee-exemple.fr" target="_blank">🏫 Site du lycée</a>
+                <a class="lien-doc lien-lycee" href="https://www.lp-ampere-josselin.ac-rennes.fr/" target="_blank">🏫 Site du lycée</a>
                 <a class="lien-doc" href="creations.html" style="grid-column: 1 / -1;">🎨 Mes créations / passions</a>
             </div>
         </div>
