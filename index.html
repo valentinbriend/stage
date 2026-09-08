@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon portfolio - Valentin Briend</title>
     <style>
-        /* ---- Réinitialisation ---- */
         * {
             margin: 0;
             padding: 0;
@@ -32,7 +31,6 @@
             border: 1px solid #e0e0e0;
         }
 
-        /* ---- En-tête avec logo (agrandi) ---- */
         .entete {
             display: flex;
             justify-content: space-between;
@@ -44,7 +42,7 @@
         }
 
         .entete-logo {
-            width: 120px;   /* Augmenté de 80px à 120px */
+            width: 120px;
             height: auto;
             margin-left: 15px;
         }
@@ -62,7 +60,6 @@
             margin-bottom: 20px;
         }
 
-        /* ---- Séparateur ---- */
         .separateur {
             border: none;
             border-top: 2px solid #e94560;
@@ -70,7 +67,6 @@
             width: 60px;
         }
 
-        /* ---- Section identité ---- */
         .identite {
             display: flex;
             flex-wrap: wrap;
@@ -102,7 +98,6 @@
             font-weight: 600;
         }
 
-        /* ---- Description ---- */
         .description {
             background: #f8f9fa;
             padding: 20px 25px;
@@ -134,7 +129,6 @@
             font-weight: bold;
         }
 
-        /* ---- Liens vers documents ---- */
         .documents {
             margin: 25px 0;
         }
@@ -170,7 +164,6 @@
             transform: scale(1.02);
         }
 
-        /* ---- Bouton "Site du lycée" en vert ---- */
         .lien-lycee {
             background: #27ae60;
             color: white;
@@ -182,7 +175,6 @@
             transform: scale(1.02);
         }
 
-        /* ---- Contact Lycée ---- */
         .contact-lycee {
             margin: 20px 0;
             padding: 15px 20px;
@@ -200,7 +192,6 @@
             font-weight: 600;
         }
 
-        /* ---- Dates de stage ---- */
         .stages {
             margin-top: 20px;
             padding-top: 15px;
@@ -219,7 +210,6 @@
             line-height: 1.6;
         }
 
-        /* ---- Responsive ---- */
         @media (max-width: 600px) {
             .carte {
                 padding: 20px;
@@ -234,7 +224,7 @@
             .entete-logo {
                 margin-top: 10px;
                 margin-left: 0;
-                width: 100px;  /* Un peu plus petit sur mobile */
+                width: 100px;
             }
 
             .identite {
@@ -262,7 +252,6 @@
 
     <div class="carte">
 
-        <!-- En-tête avec logo -->
         <div class="entete">
             <div class="entete-gauche">
                 <h1 class="titre-principal">Mon portfolio</h1>
@@ -273,7 +262,6 @@
 
         <hr class="separateur" />
 
-        <!-- Identité + coordonnées -->
         <div class="identite">
             <div>
                 <div class="nom-prenom">Valentin Briend</div>
@@ -287,7 +275,6 @@
             </div>
         </div>
 
-        <!-- Qui suis-je ? -->
         <div class="description">
             <h2>Qui suis-je ?</h2>
             <ul>
@@ -298,7 +285,6 @@
             </ul>
         </div>
 
-        <!-- Liens vers les documents -->
         <div class="documents">
             <h3>📁 Accéder à mes documents</h3>
             <div class="grille-liens">
@@ -310,14 +296,12 @@
             </div>
         </div>
 
-        <!-- Contact Lycée -->
         <div class="contact-lycee">
             <strong>Contact Lycée</strong><br />
             <span class="email">muriel.charbonnier@ac-rennes.fr</span><br />
             Muriel Charbonnier : Responsable du bureau des entreprises
         </div>
 
-        <!-- Stages -->
         <div class="stages">
             <h4>Stages</h4>
             <p>
