@@ -32,7 +32,23 @@
             border: 1px solid #e0e0e0;
         }
 
-        /* ---- En-tête ---- */
+        /* ---- En-tête avec logo ---- */
+        .entete {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .entete-gauche {
+            flex: 1;
+        }
+
+        .entete-logo {
+            width: 80px;
+            height: auto;
+            margin-left: 15px;
+        }
+
         .titre-principal {
             font-size: 28px;
             color: #1a1a2e;
@@ -154,6 +170,18 @@
             transform: scale(1.02);
         }
 
+        /* ---- Bouton "Site du lycée" en vert ---- */
+        .lien-lycee {
+            background: #27ae60;
+            color: white;
+        }
+
+        .lien-lycee:hover {
+            background: #1e8449;
+            color: white;
+            transform: scale(1.02);
+        }
+
         /* ---- Contact Lycée ---- */
         .contact-lycee {
             margin: 20px 0;
@@ -197,6 +225,16 @@
                 padding: 20px;
             }
 
+            .entete {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .entete-logo {
+                margin-top: 10px;
+                margin-left: 0;
+            }
+
             .identite {
                 flex-direction: column;
                 align-items: center;
@@ -222,9 +260,14 @@
 
     <div class="carte">
 
-        <!-- En-tête -->
-        <h1 class="titre-principal">Mon portfolio</h1>
-        <p class="sous-titre">Recherche de PFMP</p>
+        <!-- En-tête avec logo -->
+        <div class="entete">
+            <div class="entete-gauche">
+                <h1 class="titre-principal">Mon portfolio</h1>
+                <p class="sous-titre">Recherche de PFMP</p>
+            </div>
+            <img src="logo Ampere.png" alt="Logo Lycée Ampère" class="entete-logo" />
+        </div>
 
         <hr class="separateur" />
 
@@ -253,14 +296,14 @@
             </ul>
         </div>
 
-        <!-- Liens vers les documents (EXEMPLES - À REMPLACER) -->
+        <!-- Liens vers les documents -->
         <div class="documents">
             <h3>📁 Accéder à mes documents</h3>
             <div class="grille-liens">
                 <a class="lien-doc" href="CV.pdf">📄 Mon CV</a>
                 <a class="lien-doc" href="Lettre_motivation.pdf">✉️ Ma lettre de motivation</a>
                 <a class="lien-doc" href="fiche_accord_pfmp-cap-bac_pro_26-27-2.pdf">📋 Fiche d'accord PFMP</a>
-                <a class="lien-doc" href="https://www.lycee-exemple.fr" target="_blank">🏫 Site du lycée</a>
+                <a class="lien-doc lien-lycee" href="https://www.lycee-exemple.fr" target="_blank">🏫 Site du lycée</a>
                 <a class="lien-doc" href="creations.html" style="grid-column: 1 / -1;">🎨 Mes créations / passions</a>
             </div>
         </div>
